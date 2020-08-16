@@ -1,18 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Personal Portifolio | TF Web Design</title>
 </head>
+
 <body>
-    <section class="banner">
+    <header>
+        <a href="" class="logo">Portifolio</a>
+        <div class="toggle" onclick="toggleMe();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMe();">Home</a></li>
+            <li><a href="#about" onclick="toggleMe();">About</a></li>
+            <li><a href="#services" onclick="toggleMe();">Services</a></li>
+            <li><a href="#work" onclick="toggleMe();">Work</a></li>
+            <li><a href="#testimonial" onclick="toggleMe();">Testimonial</a></li>
+            <li><a href="#contact" onclick="toggleMe();">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
         <div class="CaixaTexto">
             <h2>Hellow, I'm<br><span>Thiago Ferreira.</span></h2>
             <h3>I'm a Front End Web Developer.</h3>
-            <a href="#" class="btn">About me</a>
+            <a href="#about" class="btn">About me</a>
         </div>
     </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm a Front End Web Developer.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero, nulla architecto ea
+                    pariatur soluta beatae sint doloremque molestias,inventore delectus. Impedit delectus provident
+                    recusandae similique enim, aliquid veritatis fuga <br><br>Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Labore excepturi dicta sit officia obcaecati fuga eos dolore quo veniam, hic
+                    voluptatibus nemo non blanditiis similique neque iste illum quisquam earum.</p>
+            </div>
+            <div class="w50">
+                <img class="img" src="./lib/img/img1.jpg" alt="foto-sobre">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="./lib/img/icon1.png">
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vel asperiores.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="./lib/img/icon2.png">
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vel asperiores.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="./lib/img/icon3.png">
+                <h2>Android App</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vel asperiores.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="./lib/img/icon4.png">
+                <h2>Photografy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vel asperiores.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="./lib/img/icon5.png">
+                <h2>Content Writing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vel asperiores.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="./lib/img/icon6.png">
+                <h2>Video Editing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vel asperiores.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="work" id="work">
+        <div class="heading ">
+            <h2>Our Latest Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="./lib/img/product1.jpg">
+            </div>
+            <div class="workBx">
+                <img src="./lib/img/product2.jpg">
+            </div>
+            <div class="workBx">
+                <img src="./lib/img/product3.jpg">
+            </div>
+            <div class="workBx">
+                <img src="./lib/img/product4.jpg">
+            </div>
+        </div>
+        <div class="heading ">
+            <a href="#" class="btn">View more</a>
+        </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+        <div class="heading ">
+            <h2>Testimonial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur repellat molestias dolor,
+                    porro mollitia modi cupiditate. Consectetur, nihil quisquam. Adipisci ipsam amet placeat atque porro
+                    laudantium quis aliquam reprehenderit.</p>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+            <div class="testimonialBx">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur repellat molestias dolor,
+                    porro mollitia modi cupiditate. Consectetur, nihil quisquam. Adipisci ipsam amet placeat atque porro
+                    laudantium quis aliquam reprehenderit.</p>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <div class="text">
+                            <h3>Andress</h3>
+                            <p>Av.Belo horizonte 18 , <br> Cruzeiro do Sul,Betim,<br>Minas Gerais</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>(31) 99554-4592</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>Thiago.ferreira2505@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Fullname">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea name="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <p>Copyright <i class="fa fa-copyright"></i> TF Web Design. All Right Reserved</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMe() {
+            let menuToggle = document.querySelector('.toggle');
+            let menu = document.querySelector('.menu');
+            menu.classList.toggle('active')
+            menuToggle.classList.toggle('active')
+        }
+    </script>
 </body>
+
 </html>
