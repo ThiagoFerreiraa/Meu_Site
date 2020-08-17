@@ -1,0 +1,21 @@
+.work .content{
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+.work .content .workBx{
+    width:50%;
+    padding: 14px;
+}
+
+.work .content .workBx img{
+    width: 100%;
+}
+
+@media(max-width:991px){
+    .work .content .workBx {
+        width: 100%;
+        padding: 10px;
+    }
+}
